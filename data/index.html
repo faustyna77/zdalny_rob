@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    
+    <title>ESP Serwer do sterowania</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5b6c54b906.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5b6c54b906.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="disabled">ESP Web Server</a>
+      <div class="topnav-right">
+        <a href="outputs">sterowanie</a>
+        <a href="sensors">czujnik</a>
+        <a href="/">O projekcie</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="handleNavBar()">
+        
+        <a> Wiecej<i class="fas fa-arrow-down"></i></a>
+    
+      </a>
+    </div>
+    <div class="dol">
+    <img  src="dol.PNG"   wide="200" height="200"/>
+    </div>
+    
+        <div class="card1">    
+          <p class="card-title1"> </p>
+
+         
+          <p class ="state"><span id="2s"></span></p>
+        </div>
+        <div class="gora">
+          <img  src="gora.PNG"   wide="200" height="200"/>
+          </div>
+        <div class="card2">
+          <label class="switch1">
+            <input type="checkbox" onchange="toggleCheckbox(this)" id="2">
+            <span class="slider"><i class="fa-solid fa-arrow-down-long"></i></span>
+            
+          </label>
+
+          <p class="card-title2"> </p>
+          <label class="switch2">
+            <input type="checkbox" onchange="toggleCheckbox(this)" id="14" > 
+           
+             <i class="fa-sharp fa-solid fa-up"></i>
+            <span class="slider"><i class="fa-solid fa-arrow-right"></i></span>
+          </label>
+          <p class ="state"> <span id="14s"></span></p>
+          <p class ="state"> <span id="4s"></span></p>
+        </div>
+        <div class="lewo">
+          <img  src="lewo.PNG"   wide="200" height="200"/>
+          </div>
+        <div class="card3">
+          <p class="card-title3"> </p>
+          <label class="switch3">
+            <input type="checkbox" onchange="toggleCheckbox(this)" id="12">
+            <span class="slider"><i class="fa-solid fa-arrow-up-long" wide="200" height="200" ></i></span>
+          </label>
+          <p class="state"><span id="12s"></span></p>
+        </div>
+        <div class="prawo">
+          <img  src="prawo.PNG"   wide="200" height="200"/>
+          </div>
+          <div class="card4">
+            <p class="card-title3"> </p>
+            <label class="switch4">
+              <input type="checkbox" onchange="toggleCheckbox(this)" id="12">
+              <span class="slider"> <i class="fa-sharp fa-solid fa-arrow-left-long"></i></span>
+             
+            </label>
+            <p class="state"><span id="12s"></span></p>
+          </div>
+  </body>
+  <footer >
+    <div class="flex-contener">
+        <div class="flex-item">
+            <ul class="social">
+
+                
+                 <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; "> fizykarozszerzonazadania@gmail.com</i>
+               
+            </ul>
+        </div>
+
+      <div class="copy">
+        <p>&copy; 2022 Faustyna Misiura</p>
+      </div>
+    </div>
+
+</footer>
+  <script src="script-outputs.js"></script>
+  <script src="script.js"></script>
+</html>
